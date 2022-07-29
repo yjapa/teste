@@ -13,15 +13,15 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          images: my-docker-hub-namespace/my-docker-hub-repository
+          images: yjapa/teste
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v3
         with:
           username: "yjapa"
           password: "#980124Yudi"
+          repository: yjapa/teste2
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
 # name: Publish Docker image
 
 # on:

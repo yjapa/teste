@@ -21,7 +21,7 @@ jobs:
           username: "yjapa"
           password: "#980124Yudi"
           repository: yjapa/teste2
-          tags: yjapa/teste2:latest
+          tags: latest, ${{ github.run_number }}
 # name: Publish Docker image
 
 # on:

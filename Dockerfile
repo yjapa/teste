@@ -12,7 +12,7 @@ RUN	addgroup klever \
 
 USER klever
 
-COPY --chown=klever:klever app /usr/local/bin/
+COPY --chown=kleve:kleve app /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/app
 ENTRYPOINT [ "/usr/local/bin/app" ]

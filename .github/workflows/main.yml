@@ -11,9 +11,9 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v3
 
-      - name: test
-        - run: nomad --version
-        - run: nomad job run test.nomad
+      # - name: test
+      #   - run: nomad --version
+      #   - run: nomad job run test.nomad
 
   
       # - name: Log in to Docker Hub
